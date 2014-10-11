@@ -28,3 +28,5 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 [[ ![Codeship Status for amrutapednekar/hospital](https://codeship.io/projects/c162d8e0-33bd-0132-f9b7-7a72371aeacb/status)](https://codeship.io/projects/40662)]]
+ 
+ Deployed hospital application with codeship.
