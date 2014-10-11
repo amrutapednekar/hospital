@@ -1,0 +1,71 @@
+<div id="left_column680">
+  <div class="blog" style="min-height: 0px;">
+  <h2><span>Contact Us</span></h2>
+</div>
+<div class="blog_text"> Get in touch with us :<br/><br/>
+  We try to complete all administrative formalities in most efficient manner
+  to save time and deliver quality services, use this section to provide
+  preliminary information of required services:
+</div>
+<% if flash[:notice] %>
+    <p class="flash-notice"><%= flash[:notice] %></p>
+  <% end %>
+  <form id="contact_form" name="form1" method="post" action="send_contact_email">
+    <label for="phone">Your Name:</label>
+    <input type="text" name="name" value="" id="name" />
+    <label for="email">Your Email:</label>
+    <input type="text" name="email" value="" id="email" />
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" value="" id="phone" />
+    <label for="email">Subject:</label>
+    <input type="text" name="subject" value="" id="subject" />
+    <label for="message">Message:</label>
+    <textarea name="message" cols="400" rows="4" id="message"></textarea>
+    <input type="submit" name="submitbutton" id="submitbutton" value="Submit" />
+  </form>
+  <div class="clear"></div>
+</div>
+<!--end left_column680-->
+<div id="right_column223">
+  <!--start link list-->
+  <div class="side_box">
+    <div class="title_bar">Details</div>
+    <div class="content">
+      <p><strong>Address:</strong><br />
+        ' Kevis Plaza ' Nr. Usha Talkies,
+        Station Road, Kolhapur. </p>
+      <p> <strong>P</strong>: 9325936607, 9325936608 <br />
+        <strong>F</strong>: Fax number here <br />
+        <strong>E</strong>: <a href="mailto:info@company.com">amruta.jadhav1@gmail.com</a></p>
+    </div>
+  </div>
+  <!--end link list-->
+  <!--start link list-->
+  <div class="side_box">
+    <div class="title_bar">Social</div>
+    <div class="content">
+      <ul id="social">
+        <li><a href="index.html"><%=image_tag("rss.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("twitter.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("youtube.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("facebook.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("flickr.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--end link list-->
+  <!--start link list-->
+  <div class="side_box">
+    <div class="title_bar"><strong>Opening Hours</strong></div>
+    <div class="content">
+      <ul>
+        <li><strong>Monday - Friday</strong>: 8:00am - 5:00pm</li>
+        <li><strong> Saturday</strong>: 9:00am - 4:00pm</li>
+        <li><strong> Sunday</strong>: Holiday</li>
+      </ul>
+    </div>
+  </div>
+  <!--end link list-->
+</div>
+<!--end right_column223-->
+<div class="clear"></div>

@@ -1,0 +1,97 @@
+<div id="left_column680">
+   <div class="blog" style="min-height: 0px;">
+  <h2><span>Find Us</span></h2>
+</div>
+  <div class="blog_text">
+  Ranganath Hospital is located at ------ which is situated in the heart of Kolhapur -
+  easy to approach from all over Kolhapur. Hospital is near from central bus stop.
+  You can give us call and our representative will be able to guide you if you face
+  any difficulty in finding the Hospital.<br/><br/>
+  It is advised that before coming to Ranganath Hospital always give us a call 
+  specially in case when you do not already have appointment booked for you or your loved ones -
+  this will help in providing information about the availability of doctors to address your problem .
+  </div>
+  <br/><br/>
+  <div id="googlemap" class="googlemap"></div>
+  <script type="text/javascript">
+    function enlarge_map(){
+      var address = "Keviz Plaza,Near Usha Talkies, Station Rd, Kolhapur, Maharashtra 416002, India ‎";
+      window.open('http://maps.google.com.au/maps?q='+escape(address));
+      return false;
+    }
+    var map;
+    function loadmap() {
+      var geocoder;
+      var address = "Keviz Plaza,Near Usha Talkies, Station Rd, Kolhapur, Maharashtra 416002, India ‎";
+      var address_description = "<strong>Company:</strong><br>Gayatri Swaroop Hospital, <br/>Kolhapur.";
+      geocoder = new google.maps.Geocoder();
+      geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          var myOptions = {
+            zoom: 16,
+            center: new google.maps.LatLng(16.70286,74.232964),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById("googlemap"), myOptions);
+          var marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(16.70286,74.232964)
+          });
+          var infowindow = new google.maps.InfoWindow({
+            content: address_description
+          });
+          infowindow.open(map,marker); // uncomment this to display a popup on the map location.
+
+        } else {
+          alert("Geocode was not successful for the following reason: " + status);
+        }
+      });
+    }
+    window.onload=loadmap();
+  </script>
+  <ul class="map_buttons">
+    <li  style="margin-right:7px;"><a href="#" onclick="return enlarge_map()">enlarge map</a></li>
+  </ul>
+</div>
+<!--end left_column680-->
+<div id="right_column223">
+  <!--start link list-->
+  <div class="side_box">
+    <div class="title_bar">Details</div>
+    <div class="content">
+      <p><strong>Address:</strong><br />
+        ' Kevis Plaza ' Nr. Usha Talkies,
+        Station Road, Kolhapur. </p>
+      <p> <strong>P</strong>: 9325936607, 9325936608 <br />
+        <strong>F</strong>: Fax number here <br />
+        <strong>E</strong>: <a href="mailto:info@company.com">amruta.jadhav1@gmail.com</a></p>
+    </div>
+  </div>
+  <!--end link list-->
+  <!--start link list-->
+  <div class="side_box">
+    <div class="title_bar">Social</div>
+    <div class="content">
+      <ul id="social">
+        <li><a href="index.html"><%=image_tag("rss.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("twitter.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("youtube.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("facebook.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+        <li><a href="index.html"><%=image_tag("flickr.png",:style=>"width:32;height:32;border:0;")-%></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="side_box">
+    <div class="title_bar"><strong>Opening Hours</strong></div>
+    <div class="content">
+      <ul>
+        <li><strong>Monday - Friday</strong>: 8:00am - 5:00pm</li>
+        <li><strong> Saturday</strong>: 9:00am - 4:00pm</li>
+        <li><strong> Sunday</strong>: Holiday</li>
+      </ul>
+    </div>
+  </div>
+  <!--end link list-->
+</div>
+<!--end right_column223-->
+<div class="clear"></div>

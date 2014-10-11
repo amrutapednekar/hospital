@@ -1,0 +1,55 @@
+<div id="week_by_week">
+  <div class="blog" style="min-height: 10px!important;">
+    <h2><span><a href="#">Your Baby.... Week By Week</a></span>
+    </h2>
+  </div>
+  <div id="week_count">
+    <button id="prev" style="float:left;">Go to Prev</button>
+    <%= image_tag("week3.jpg",:id =>'img1',  :style=>"display:inline-block;") -%>
+    <%= image_tag("week5.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week6.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week7.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week8.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week9.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week10.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week11.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week12.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week13.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week15.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week18.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week20.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week23.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week26.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week28.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week31.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week32.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week35.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week39.jpg",:style=>"display:none;") -%>
+    <%= image_tag("week40.jpg",:style=>"display:none;") -%>
+    <button id="next" style="float:right;">Go to Next</button>
+  </div>
+</div>
+<div class="clear"></div>
+
+<script type="text/javascript">
+  var $curr = $( "#img1" );
+  $("#prev").hide();
+
+  $( "#next" ).click(function() {
+    $("#prev").show();
+    $curr.hide('slow');
+    $curr = $curr.next();
+    $curr.show('slow');
+    if($curr.next().prop("tagName")!='IMG')
+     $("#next").hide();
+  });
+
+  $( "#prev" ).click(function() {
+    $("#next").show();
+    $curr.hide('slow');
+    $curr = $curr.prev();
+    $curr.show('slow');
+   if($curr.prev().prop("tagName")!='IMG')
+     $("#prev").hide();
+  });
+</script>
