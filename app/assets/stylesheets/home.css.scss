@@ -11,7 +11,7 @@
     text-indent:-9999px;
     overflow:hidden;
     display:inline-block;
-    background:url(../images/logo.png) no-repeat;
+    background:asset_url("logo.png");
     position:absolute;
     margin:158px 0 0 86px;
 }
@@ -57,7 +57,7 @@ a img, a:link img, a:visited {
     height:275px;
     width:980px;
     margin:0px auto;
-    background:url(../images/header_bg_small.png) no-repeat top left;
+    background:asset_url("header_bg_small.png");
     background-color:#eefab9;
     z-index:10;
 }
@@ -67,7 +67,7 @@ a img, a:link img, a:visited {
         width:941px;
         padding:0px;
         margin:-23px 0 0 20px;
-        background:url("../images/breadcrum.png") no-repeat top left;
+        background:asset_url("breadcrum.png");
         z-index:99;
         position:absolute;
 }
@@ -163,7 +163,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     height:51px;
     width:223px;
     text-align:center;
-    background:url("../images/side-button.png") no-repeat top left;
+    background:asset_url("side-button.png");
     font-size:24px;
     color:#677205;
     font-family: 'Dancing Script', cursive;
@@ -252,7 +252,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     position: absolute;
     width:80px;
     height:20px;
-    background:url(../images/white_transparent.png) repeat;
+    background:asset_url("white_transparent.png");
     margin: 154px 0 0 0;
     text-align: center;
     padding: 5px 0 5px 0;
@@ -260,7 +260,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 #sidebar_image_button {
     width:223px;
     height:85px;/*113px*/
-    background:url(../images/side_review.jpg) no-repeat left top;
+    background:asset_url("side_review.jpg");
     text-align:center;
     padding:31px 0 0 0;
     display:inline-block;
@@ -280,7 +280,7 @@ a#sidebar_image_button, a:link#sidebar_image_button, a:visited#sidebar_image_but
 #sidebar_image_shipping {
     width:223px;
     height:113px;/*113px*/
-    background:url(../images/side_shipping.jpg) no-repeat left top;
+    background:asset_url("side_shipping.jpg");
     text-align:center;
     padding:0px 0 0 0;
     display:inline-block;
@@ -483,7 +483,7 @@ h2 {
 .blog .date_flag {
     width:76px;
     height:74px;
-    background:url("../images/date.png") no-repeat top left;
+    background:asset_url("date.png");
     float:right;
     margin-right:20px;
     text-align:center;
@@ -544,7 +544,7 @@ h2 {
 .button_small {
     width:76px;
     height:23px;
-    background:url("../images/big-button.png") no-repeat top left;
+    background:asset_url("big-button.png");
     font-size:14px;
     color:#613c12;
     display:inline-block;
@@ -557,7 +557,7 @@ a.button_small, a:link.button_small, a:visited.button_small {
 }
 a:hover.button_small {
     text-decoration:none;
-    background:url(../images/button_pattern_small2.png) no-repeat left top;
+    background:asset_url("button_pattern_small2.png");
 }
 .blog_footer .button_small {
     float:right;
@@ -570,7 +570,7 @@ a:hover.button_small {
 .button_medium {
     width:128px;
     height:31px;/*45px*/
-    background:url(../images/button_medium.png) no-repeat left top;
+    background:asset_url("button_medium.png");
     font-size:18px;
     color:#613c12;
     display:inline-block;
@@ -583,7 +583,7 @@ a.button_medium, a:link.button_medium, a:visited.button_medium {
 }
 a:hover.button_medium {
     text-decoration:none;
-    background:url(../images/button_medium2.png) no-repeat left top;
+    background:asset_url("button_medium2.png");
 }
 /*full blog post*/
 
@@ -599,14 +599,12 @@ a:hover.button_medium {
     margin:0 20px 20px 0;
 }
 blockquote {
-    background: url(../images/quote.png) no-repeat scroll left top transparent;
     margin: 0 0 10px;
     min-height: 50px;
     padding-left: 60px;
     width: 90%;
 }
 .blog_summary li {
-    list-style-image:url(../images/dot.png);
 }
 /*Contact*/
 
@@ -644,7 +642,7 @@ blockquote {
     margin:0 0 30px 100px;
     width: 100px;
     height:31px;
-    background:url(../images/button_green_tall.png) no-repeat left top;
+    background:asset_url("small-button.png");
     border:none;
     color:#613c12;
     font-family: 'Delius Swash Caps', cursive;
