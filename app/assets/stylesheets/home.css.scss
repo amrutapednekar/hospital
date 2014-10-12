@@ -28,7 +28,7 @@
 body {
 	background-color:#cdde84;
 	color:#473009;
-	background-image:asset-data-url("page_bg_stripe.jpg");
+	background-image:asset-data-url("back-line.jpg");
 	background-repeat:repeat;
 	//font-family: 'Delius', cursive;
         font-family: "PT Sans",sans-serif;
@@ -68,7 +68,7 @@ a img, a:link img, a:visited {
 	width:941px;
 	padding:0px;
 	margin:-23px 0 0 20px;
-	background:asset-data-url("menu_bg.png") top left no-repeat;
+	background:asset-data-url("breadcrum1.png") top left no-repeat;
 	z-index:99;
 	position:absolute;
 }
@@ -97,17 +97,17 @@ ul#navigation a {
 ul#navigation li.hover a, ul#navigation li:hover a, ul#navigation a.active, ul#navigation a:hover {
 	color:#906113; /*color of text on mouse over*/
 }
-/*--drop down menu second-level - this is optional--*/
+/*--drop down menu second-menu - this is optional--*/
 ul#navigation li.hover, ul#navigation li:hover {
 	position:relative;
 }
-ul#navigation li.hover ul.second-level, ul#navigation li:hover ul.second-level {
+ul#navigation li.hover ul.second-menu, ul#navigation li:hover ul.second-menu {
 	display:block;
 }
-ul#navigation li.hover ul.second-level ul.third-level, ul#navigation li:hover ul.second-level ul.third-level {
+ul#navigation li.hover ul.second-menu ul.third-level, ul#navigation li:hover ul.second-menu ul.third-level {
 	display:none;
 }
-ul#navigation ul.second-level {
+ul#navigation ul.second-menu {
 	position:absolute;
 	top:40px; /*how far away from the top menu*/
 	left:0;
@@ -115,13 +115,13 @@ ul#navigation ul.second-level {
 	padding:5px;
 	width:200px;
 	display:none;
-	background-color:#fad05f; /*color of the dropdown*/
+	background-color:#EBF79B;
 }
-ul#navigation ul.second-level li {
+ul#navigation ul.second-menu li {
 	width:200px;
 	margin:0;
 }
-ul#navigation ul.second-level a {
+ul#navigation ul.second-menu a {
 	display:block;
 	float:none;
 	width:180px;
@@ -134,14 +134,14 @@ ul#navigation ul.second-level a {
 	border-bottom:1px solid #eac257;
 	text-transform:none; /*turns off the uppercase*/
 }
-ul#navigation ul.second-level li.hover a, ul#navigation ul.second-level li:hover a, ul#navigation ul.second-level a:hover {
+ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a, ul#navigation ul.second-menu a:hover {
 	color:#906113;
 	background-color:#eac257;
 }
 /*main content*/
 
 #content_bg {
-	background-color:#FFF;/*overflow:auto;*//*sticky footer*//*padding-bottom: 188px; /*sticky footer*/
+	background-color:#FAFFF5;/*overflow:auto;*//*sticky footer*//*padding-bottom: 188px; /*sticky footer*/
 	padding:20px 20px 40px 20px;
 	min-height:300px;
 	line-height:1.5em;
@@ -320,7 +320,7 @@ a#sidebar_image_shipping, a:link#sidebar_image_shipping, a:visited#sidebar_image
 	width:941px;
 	padding:0px;
 	margin:-23px 0 0 20px;
-	background:asset-data-url("menu_bg.png") top left no-repeat;
+	//background:asset-data-url("breadcrum1.png") top left no-repeat;
 	z-index:101;
 	position:absolute;
 	font-family: 'Delius Swash Caps', cursive;
@@ -395,16 +395,7 @@ h2 {
 	padding: 20px 0;
 	//font-family: 'Dancing Script', cursive;
         font-family: "PT Sans",sans-serif;
-}
-.florish_title_left {
-	background:asset-data-url("florish_left.png") no-repeat left top;
-	width:75px;
-	height:45px;
-}
-.florish_title_right {
-	background:asset-data-url("florish_right.png") no-repeat right top;
-	width:75px;
-	height:45px;
+
 }
 .intro_box {
 	padding:0;
@@ -421,17 +412,11 @@ h2 {
 	position:absolute;
 	z-index:50; /* so it sits under our fancy border */
 }
-.fancy_picture_box > div {
-	background: asset-data-url("home_portrait_frame.png") no-repeat;
+.laproscopy_box > div {
 	width:225px;
 	height:214px;
 	position:absolute;
 	z-index:51; /* so it sits above the image above */
-}
-.fancy_hr_home {
-	margin-bottom:21px;
-	background: asset-data-url('hr_bar_437.png') center no-repeat;
-	height:20px;
 }
 .home_wrap {
 	text-align: center;
@@ -458,7 +443,7 @@ h2 {
 	padding:0;
 	font-weight:normal;
 	height:39px;
-	background:asset-data-url("blog_tile_banner_tile.gif") repeat top left;
+	background:asset-data-url("title.gif") repeat top left;
 	line-height:normal;
 }
 .blog h2 span {
@@ -506,7 +491,7 @@ h2 {
 .blog .date_flag {
 	width:76px;
 	height:74px;
-	background:asset-data-url("blog_date_bg.png") no-repeat top right;
+	background:asset-data-url("date.png") no-repeat top right;
 	float:right;
 	margin-right:20px;
 	text-align:center;
@@ -730,7 +715,7 @@ ul.map_buttons li a {
 	padding:0;
 	font-weight:normal;
 	height:39px;
-	background:url(../images/blog_tile_banner_tile.gif) repeat top left;
+	background:url(../images/title.gif) repeat top left;
 	line-height:normal;
 }
 .ribbon_title h2 span {
@@ -844,7 +829,7 @@ ul.cart_list li img {
 	padding:0;
 	font-weight:normal;
 	height:39px;
-	background:asset-data-url("blog_tile_banner_tile.gif") repeat top left;
+	background:asset-data-url("title.gif") repeat top left;
 	clear:both;
 }
 .shop_breadcrumb div {
