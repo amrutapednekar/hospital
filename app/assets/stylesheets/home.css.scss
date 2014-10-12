@@ -11,7 +11,7 @@
     text-indent:-9999px;
     overflow:hidden;
     display:inline-block;
-    background:asset_url("logo.png");
+    background:asset_url("logo.jpg");
     position:absolute;
     margin:158px 0 0 86px;
 }
@@ -21,7 +21,7 @@
     text-indent:-9999px;
     overflow:hidden;
     display:inline-block;
-    background:url(../images/logo2.png) no-repeat;
+/*    background:url(../images/logo2.png) no-repeat; */
     position:absolute;
     margin:94px 0 0 86px;
 }
@@ -57,7 +57,7 @@ a img, a:link img, a:visited {
     height:275px;
     width:980px;
     margin:0px auto;
-    background:asset_url("header_bg_small.png");
+  /*  background:asset_url("header_bg_small.png"); */
     background-color:#eefab9;
     z-index:10;
 }
@@ -252,7 +252,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     position: absolute;
     width:80px;
     height:20px;
-    background:asset_url("white_transparent.png");
+   /* background:asset_url("white_transparent.png"); */
     margin: 154px 0 0 0;
     text-align: center;
     padding: 5px 0 5px 0;
@@ -260,7 +260,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 #sidebar_image_button {
     width:223px;
     height:85px;/*113px*/
-    background:asset_url("side_review.jpg");
+   /* background:asset_url("side_review.jpg"); */
     text-align:center;
     padding:31px 0 0 0;
     display:inline-block;
@@ -280,7 +280,7 @@ a#sidebar_image_button, a:link#sidebar_image_button, a:visited#sidebar_image_but
 #sidebar_image_shipping {
     width:223px;
     height:113px;/*113px*/
-    background:asset_url("side_shipping.jpg");
+    /*background:asset_url("side_shipping.jpg");*/
     text-align:center;
     padding:0px 0 0 0;
     display:inline-block;
@@ -557,7 +557,7 @@ a.button_small, a:link.button_small, a:visited.button_small {
 }
 a:hover.button_small {
     text-decoration:none;
-    background:asset_url("button_pattern_small2.png");
+   /* background:asset_url("button_pattern_small2.png"); */
 }
 .blog_footer .button_small {
     float:right;
@@ -570,7 +570,7 @@ a:hover.button_small {
 .button_medium {
     width:128px;
     height:31px;/*45px*/
-    background:asset_url("button_medium.png");
+    /*background:asset_url("button_medium.png");*/
     font-size:18px;
     color:#613c12;
     display:inline-block;
@@ -583,7 +583,7 @@ a.button_medium, a:link.button_medium, a:visited.button_medium {
 }
 a:hover.button_medium {
     text-decoration:none;
-    background:asset_url("button_medium2.png");
+    /*background:asset_url("button_medium2.png");*/
 }
 /*full blog post*/
 
@@ -674,7 +674,7 @@ ul.map_buttons li {
     line-height:normal;
     float:right;
     list-style:none;
-    background:url(../images/button_med_brown.png) no-repeat top left;
+   /* background:url(../images/button_med_brown.png) no-repeat top left;*/
     display:inline-block;
 }
 ul.map_buttons li a {
@@ -705,11 +705,11 @@ ul.map_buttons li a {
     padding:0;
     font-weight:normal;
     height:39px;
-    background:url(../images/title.gif) repeat top left;
+ /*   background:url(../images/title.gif) repeat top left;*/
     line-height:normal;
 }
 .ribbon_title h2 span {
-    background:url(../images/heading_banner.gif) no-repeat left top;
+    /*background:url(../images/heading_banner.gif) no-repeat left top;*/
     font-size:24px;
     color:#613c12;
     font-family: 'Dancing Script', cursive;
@@ -750,7 +750,7 @@ ul#social li {
     z-index:50; /* so it sits under our fancy border */
 }
 .fancy_picture_box_med > div {
-    background:url(../images/fancy_border_med.png) no-repeat;
+    /*background:url(../images/fancy_border_med.png) no-repeat;*/
     width:380px;
     height:265px;
     position:absolute;
@@ -767,7 +767,7 @@ ul.shop_categories li {
     padding:1px 0 !important;
 }
 .number {
-    background:url(../images/number.png) no-repeat top left;
+    /*background:url(../images/number.png) no-repeat top left;*/
     width:27px;
     height:19px;/*22px*/
     float:right;
@@ -819,11 +819,11 @@ ul.cart_list li img {
     padding:0;
     font-weight:normal;
     height:39px;
-    background:url("../images/title.gif") repeat top left;
+    /*background:url("../images/title.gif") repeat top left;*/
     clear:both;
 }
 .shop_breadcrumb div {
-    background:url(../images/heading_banner.gif) no-repeat left top;
+   /* background:url(../images/heading_banner.gif) no-repeat left top;*/
     font-size:24px;
     color:#613c12;
     font-family: 'Dancing Script', cursive;
@@ -848,7 +848,7 @@ span.onsale {
     text-align: center;
     line-height: 32px;
     top: 0;
-    background:url(../images/sale_flag.png) no-repeat center !important;
+    /*background:url(../images/sale_flag.png) no-repeat center !important;*/
     width:49px;
     height:34px;
     text-indent: -999px;
@@ -925,7 +925,7 @@ span.onsale {
 
 .products li .price2 {
     color: #473009;
-    background:url(../images/white_transparent.png) repeat;
+  /*  background:url(../images/white_transparent.png) repeat;*/
     margin:-37px 0 0 6px;
     height: 20px;
     position: absolute;
@@ -979,7 +979,7 @@ span.onsale {
 }
 a.button {
     float: none;
-    background: url(../images/button_med_green.png) no-repeat;
+   /* background: url(../images/button_med_green.png) no-repeat;*/
     width: 100px;
     height: 23px;
     display: block;
@@ -1031,7 +1031,7 @@ div.product div.summary div.product_meta {
 div.product p.price {
     /*margin: -48px 10px 0 0;*/
     float: right;
-    background: url(../images/price_tag.png) no-repeat right;
+  /*  background: url(../images/price_tag.png) no-repeat right;*/
     width: 125px;
     height: 31px;/*38*/
     padding: 7px 15px 0 0;
