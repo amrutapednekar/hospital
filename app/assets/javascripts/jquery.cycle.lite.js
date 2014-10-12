@@ -1,13 +1,3 @@
-/*!
- * jQuery Cycle Lite Plugin
- * http://malsup.com/jquery/cycle/lite/
- * Copyright (c) 2008-2011 M. Alsup
- * Version: 1.3.1 (07-OCT-2011)
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl.html
- * Requires: jQuery v1.3.2 or later
- */
 ;(function($) {
 
 var ver = 'Lite-1.3';
