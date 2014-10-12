@@ -67,7 +67,7 @@ a img, a:link img, a:visited {
         width:941px;
         padding:0px;
         margin:-23px 0 0 20px;
-        background:url("breadcrum.png") no-repeat top left;
+        background:url("../images/breadcrum.png") no-repeat top left;
         z-index:99;
         position:absolute;
 }
@@ -163,7 +163,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     height:51px;
     width:223px;
     text-align:center;
-    background:url("side-button.png") no-repeat top left;
+    background:url("../images/side-button.png") no-repeat top left;
     font-size:24px;
     color:#677205;
     font-family: 'Dancing Script', cursive;
@@ -483,7 +483,7 @@ h2 {
 .blog .date_flag {
     width:76px;
     height:74px;
-    background:url("date.png") no-repeat top left;
+    background:url("../images/date.png") no-repeat top left;
     float:right;
     margin-right:20px;
     text-align:center;
@@ -544,7 +544,7 @@ h2 {
 .button_small {
     width:76px;
     height:23px;
-    background:url("big-button.png") no-repeat top left;
+    background:url("../images/big-button.png") no-repeat top left;
     font-size:14px;
     color:#613c12;
     display:inline-block;
@@ -821,7 +821,7 @@ ul.cart_list li img {
     padding:0;
     font-weight:normal;
     height:39px;
-    background:asset-data-url("title.gif") repeat top left;
+    background:url("../images/title.gif") repeat top left;
     clear:both;
 }
 .shop_breadcrumb div {
