@@ -27,7 +27,7 @@
 body {
     background-color:#cdde84;
     color:#473009;
-    background:asset_url("back-line.jpg");
+    background:asset_url("bg.jpg");
     background-repeat:repeat;
     font-family: "PT Sans",sans-serif;
     font-size:14px;
@@ -66,9 +66,12 @@ a img, a:link img, a:visited {
         width:941px;
         padding:0px;
         margin:-23px 0 0 20px;
-        background:asset_url("breadcrum.png");
+        background:asset_url("menu.jpg");
         z-index:99;
         position:absolute;
+        border-radius:18px;
+        font-family: 'Delius Swash Caps', cursive;
+	font-size:12px;
 }
 ul#navigation {
     margin:0px 0 0 30px; /*indent to line up with the logo*/
@@ -85,15 +88,15 @@ ul#navigation li {
 }
 ul#navigation a {
     float:left; /*makes the text sit beside each other not down the page*/
-    color:#493215; /*menu color normal*/
-    padding:13px 13px 5px 13px; /*space around and inbetween the buttons, top, right, bottom, left*/
+    color:#000099; /*menu color normal*/
+    padding:13px 13px 5px 13px; /*space around and in between the buttons, top, right, bottom, left*/
     text-decoration:none; /*no underline*/
     font:18px 'Delius Swash Caps', cursive; /*menu text size and font*/
-    border-right:1px solid #eac257;
+    border-right:1px solid #000099;
     text-shadow: 1px 1px #fce5a7; /*adds drowshadow effect in all browsers except IE.*/
 }
 ul#navigation li.hover a, ul#navigation li:hover a, ul#navigation a.active, ul#navigation a:hover {
-    color:#906113; /*color of text on mouse over*/
+    color:white; /*color of text on mouse over*/
 }
 /*--drop down menu second-menu - this is optional--*/
 ul#navigation li.hover, ul#navigation li:hover {
@@ -113,7 +116,9 @@ ul#navigation ul.second-menu {
     padding:5px;
     width:200px;
     display:none;
-    background-color:#EBF79B;
+    //background-color:#EBF79B;
+ //   background-color:#DEF1FA;
+background:asset_url("menu.jpg");
 }
 ul#navigation ul.second-menu li {
     width:200px;
@@ -128,13 +133,13 @@ ul#navigation ul.second-menu a {
     background:none;
     font-size:16px; /*font size */
     line-height:14px;
-    color:#493215;
+    color:#000099;
     border-bottom:1px solid #eac257;
     text-transform:none; /*turns off the uppercase*/
 }
 ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a, ul#navigation ul.second-menu a:hover {
-    color:#906113;
-    background-color:#eac257;
+    color:white;
+    //background-color:#eac257;
 }
 /*main content*/
 
