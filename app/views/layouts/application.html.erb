@@ -12,7 +12,7 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <div id="logo"><a href="index.htm">Hospital</a></div>
+        <div id="logo"><a href="home/index.htm">Hospital</a></div>
         <!--end logo-->
         <div id="menu">
           <ul id="navigation">
@@ -20,19 +20,22 @@
             <li><a href="/laparoscopy/index.htm">Procedures and surgery</a>
               <ul class="second-menu">
                 <li><%= link_to 'Laparoscopy', laparoscopy_index_path %></li>
-                 <li><%= link_to 'Fertility enhancement', laparoscopy_fertility_enhancement_path %></li>
-                <li><%= link_to 'Hysterectomy', laparoscopy_hysteroscopy_path %></li>
-                <li><%= link_to 'Myomectomy', home_awards_path %></li>
-                <li><%= link_to 'Tubal Cannulation', home_awards_path %></li>
-                <li><%= link_to 'Cyst', home_awards_path %></li>
-                <li><%= link_to 'Endometriosis', home_awards_path %></li>
-                <li><%= link_to 'Tuboplasty', home_awards_path %></li>
-                <li><%= link_to 'Appendicitis & Hernia', home_awards_path %></li>
-
+                <li><%= link_to 'Appendicitis', laparoscopy_appendicitis_path %></li>
+                <li><%= link_to 'Hernia', laparoscopy_hernia_path %></li>
+                <li><%= link_to 'Cholecystectomy', laparoscopy_cholecystectomy_path %></li>
+                <li><%= link_to 'Cardiomyotomy', laparoscopy_cardiomyotomy_path %></li>
               </ul>
             </li>
-            <li><a href="index.htm">Pregnancy</a></li>
-            <li><a href="index.htm">Parenting</a></li>
+            <li><%= link_to 'Fertility enhancement', laparoscopy_fertility_enhancement_path %>
+              <ul class="second-menu">
+                <li><%= link_to 'Hysterectomy', laparoscopy_hysteroscopy_path %></li>
+                <li><%= link_to 'Myomectomy', laparoscopy_myomectomy_path %></li>
+                <li><%= link_to 'Tubal Cannulation', '#' %></li>
+                <li><%= link_to 'Cyst', laparoscopy_cyst_path %></li>
+                <li><%= link_to 'Endometriosis', laparoscopy_endometriosis_path %></li>
+                <li><%= link_to 'Tuboplasty', laparoscopy_tuboplasty_path %></li>
+              </ul>
+            </li>
             <li><a href="#">About Us</a>
               <ul class="second-menu">
                 <li><%= link_to 'Awards', home_awards_path %></li>
@@ -48,7 +51,7 @@
           </ul>
         </div>
         <!--end menu-->
-        <%= image_tag("home.jpg") -%>
+
       </div>
       <!--end header-->
       <div id="content_bg"><%= yield %></div>

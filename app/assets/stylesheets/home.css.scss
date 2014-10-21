@@ -46,7 +46,7 @@ a img, a:link img, a:visited {
     margin:30px auto 40px auto;
 }
 #header {
-    height:458px;
+    //height:458px;
     width:980px;
     margin:0px auto;
     background-color:#eefab9;
@@ -164,7 +164,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     margin-bottom:30px;
 }
 .side_box .title_bar {
-    height:51px;
+    height:43px;
     width:223px;
     text-align:center;
     background:asset_url("side-button.png");
@@ -435,6 +435,7 @@ h2 {
     width:100%;
     min-height:260px;
     padding-bottom:20px;
+    padding-top:20px;
 }
 .blog h2 {
     margin:0;

@@ -10,12 +10,19 @@ Rails.application.routes.draw do
   get 'laparoscopy/index'
   get 'laparoscopy/hysteroscopy'
   get 'laparoscopy/fertility_enhancement'
-
+  get 'laparoscopy/appendicitis'
+  get 'laparoscopy/hernia'
+  get 'laparoscopy/cyst'
+  get 'laparoscopy/tuboplasty'
+  get 'laparoscopy/myomectomy'
+  get 'laparoscopy/cholecystectomy'
+  get 'laparoscopy/endometriosis'
+  get 'laparoscopy/cardiomyotomy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
