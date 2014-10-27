@@ -5,6 +5,26 @@
   * Change the width and height of this to fit your new logo
   * Change the path to your logo PNG file if needed
 */
+#logo {
+height:137px;
+background:asset_url("header1.jpg");
+}
+.hospital_name
+{
+color:white;
+font-family:'Philosopher',​sans-serif;
+margin-top: 2px; padding-top: 34px; padding-left: 107px;
+font-style: italic;
+margin-bottom:0px;
+font-size:36px;
+}
+.hospital_desc
+{
+color:#777;
+font:13px/20px "PT Sans",sans-serif;
+padding:0px;
+padding-left: 106px;
+}
 #logo a {
     width:297px;
     height:98px;
@@ -26,17 +46,18 @@
 }
 body {
     background-color:#cdde84;
-    color:#473009;
-    background:asset_url("bg.jpg");
+    color:#777777;
+    background:asset_url("surgery.jpg");
     background-repeat:repeat;
     font-family: "PT Sans",sans-serif;
     font-size:14px;
+    background-position: center top;
 }
 a, a:link, a:visited {
-    color:#677205;
+    color:#555;
 }
 a:hover {
-    color:#9a7138;
+    color:black;
 }
 a img, a:link img, a:visited {
     border:none;
@@ -44,6 +65,7 @@ a img, a:link img, a:visited {
 #wrapper {
     width:980px;
     margin:30px auto 40px auto;
+    box-shadow: 0 0 5px #ddd;
 }
 #header {
     //height:458px;
@@ -61,23 +83,19 @@ a img, a:link img, a:visited {
     z-index:10;
 }
 /*menu*/
-#menu { /*the container that holds the main menu*/
-        height:48px;
-        width:941px;
-        padding:0px;
-        margin:-23px 0 0 20px;
-        background:asset_url("menu.jpg");
-        z-index:99;
-        position:absolute;
-        border-radius:18px;
-        font-family: 'Delius Swash Caps', cursive;
-	font-size:12px;
+#menu
+{
+border-bottom:1px solid #eaeaea;
+border-top:1px solid #eaeaea;
 }
+
 ul#navigation {
-    margin:0px 0 0 30px; /*indent to line up with the logo*/
-    padding:0px;
-    float:left;
-    position:absolute;  /*makes dropdown sit on top of flash & map*//*z-index:100; /*makes dropdown sit on top of flash & map*/
+padding:0px;
+margin:0px;
+float:left;
+position:absolute;  /*makes dropdown sit on top of flash & map*//*z-index:100; /*makes dropdown sit on top of flash & map*/
+background-color:white;
+width:980px;
 }
 ul#navigation li {
     float:left;
@@ -88,15 +106,15 @@ ul#navigation li {
 }
 ul#navigation a {
     float:left; /*makes the text sit beside each other not down the page*/
-    color:#000099; /*menu color normal*/
+    color:gray; /*menu color normal*/
     padding:13px 13px 5px 13px; /*space around and in between the buttons, top, right, bottom, left*/
     text-decoration:none; /*no underline*/
-    font:18px 'Delius Swash Caps', cursive; /*menu text size and font*/
-    border-right:1px solid #000099;
+    font:14px "PT Sans",sans-serif; /*menu text size and font*/
+    border-right:1px solid gray;
     text-shadow: 1px 1px #fce5a7; /*adds drowshadow effect in all browsers except IE.*/
 }
 ul#navigation li.hover a, ul#navigation li:hover a, ul#navigation a.active, ul#navigation a:hover {
-    color:white; /*color of text on mouse over*/
+    color:#05a9c5; /*color of text on mouse over*/
 }
 /*--drop down menu second-menu - this is optional--*/
 ul#navigation li.hover, ul#navigation li:hover {
@@ -110,15 +128,13 @@ ul#navigation li.hover ul.second-menu ul.third-level, ul#navigation li:hover ul.
 }
 ul#navigation ul.second-menu {
     position:absolute;
-    top:40px; /*how far away from the top menu*/
+    top:27px; /*how far away from the top menu*/
     left:0;
     margin:0;
     padding:5px;
     width:200px;
     display:none;
-    //background-color:#EBF79B;
- //   background-color:#DEF1FA;
-background:asset_url("menu.jpg");
+    background-color:white;
 }
 ul#navigation ul.second-menu li {
     width:200px;
@@ -131,15 +147,14 @@ ul#navigation ul.second-menu a {
     border:none;
     padding:10px 10px;
     background:none;
-    font-size:16px; /*font size */
+    font:14px "PT Sans",sans-serif; /*menu text size and font*/
     line-height:14px;
-    color:#000099;
-    border-bottom:1px solid #eac257;
+    color:gray;
+    border-bottom:1px solid gray;
     text-transform:none; /*turns off the uppercase*/
 }
 ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a, ul#navigation ul.second-menu a:hover {
-    color:white;
-    //background-color:#eac257;
+    color:#05a9c5;
 }
 /*main content*/
 
@@ -148,6 +163,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     padding:20px 20px 40px 20px;
     min-height:300px;
     line-height:1.5em;
+    margin-top:34px;
 }
 #left_column680 {
     width:680px;
@@ -170,7 +186,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
     background:asset_url("side-button.png");
     font-size:24px;
     color:#677205;
-    font-family: 'Dancing Script', cursive;
+  //  font-family: 'Dancing Script', cursive;
     z-index:80;
     text-shadow: 1px 1px #f7fae1;
     line-height:normal;
@@ -221,7 +237,7 @@ ul#navigation ul.second-menu li.hover a, ul#navigation ul.second-menu li:hover a
 #pregnancy_counter > div {
     width: 142px;
     text-align:center;
-    font-family: 'Dancing Script', cursive;
+   // font-family: 'Dancing Script', cursive;
     color:#613c12;
     line-height:normal;
 }
@@ -375,7 +391,7 @@ a#sidebar_image_shipping, a:link#sidebar_image_shipping, a:visited#sidebar_image
     font-family: 'Dancing Script', cursive;
 }
 h1 {
-    font-family: 'Dancing Script', cursive;
+    //font-family: 'Dancing Script', cursive;
     font-size:30px;
     margin: 0 0 18px 0;
     padding: 0;
@@ -445,20 +461,18 @@ h2 {
     line-height:normal;
 }
 .blog h2 span {
-    font-size:24px;
-    color:#613c12;
-    font-family: 'Dancing Script', cursive;
-    padding:2px 5px 0 38px;
+    font-size:20px;
+    color:black;
     height:39px;
     display:inline-block;
 }
 .blog h2 span a, .blog h2 span a:link, .blog h2 span a:visited {
-    color:#613c12;
+    color:#555;
     text-decoration:none;
     text-shadow: 1px 1px #fff;
 }
 .blog h2 span a:hover {
-    color:#906113;
+    color:black;
 }
 .blog_summary {
     margin-top:20px;
