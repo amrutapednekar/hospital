@@ -5,6 +5,19 @@
   * Change the width and height of this to fit your new logo
   * Change the path to your logo PNG file if needed
 */
+@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Philosopher'), url(http://fonts.gstatic.com/s/philosopher/v7/OttjxgcoEsufOGSINYBGLYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
 #logo {
 height:137px;
 background:asset_url("header1.jpg");
@@ -20,7 +33,7 @@ font-size:36px;
 }
 .hospital_desc
 {
-color:#777;
+color:white;
 font:13px/20px "PT Sans",sans-serif;
 padding:0px;
 padding-left: 106px;
@@ -50,7 +63,7 @@ body {
     background:asset_url("surgery.jpg");
     background-repeat:repeat;
     font-family: "PT Sans",sans-serif;
-    font-size:14px;
+    font-size:13px;
     background-position: center top;
 }
 a, a:link, a:visited {
@@ -390,8 +403,9 @@ a#sidebar_image_shipping, a:link#sidebar_image_shipping, a:visited#sidebar_image
 .dancing {
     font-family: 'Dancing Script', cursive;
 }
+
 h1 {
-    //font-family: 'Dancing Script', cursive;
+    font-family: "Philosopher",​sans-serif;
     font-size:30px;
     margin: 0 0 18px 0;
     padding: 0;
@@ -399,17 +413,21 @@ h1 {
 }
 /*home page*/
 h1 span {
-    display:inline-block;
+   font-family: "Philosopher",​sans-serif;
+   display:inline-block;
     float:left;
-    padding:0px 3px;
-    font-weight:normal;
+   // padding:0px 3px;
+    font-weight:400;
+    font-size:normal;
     margin:0px;
-    line-height:normal;
-}
+   }
 h2 {
+    font-size:26px;
     margin:0;
     padding: 20px 0;
-    font-family: "PT Sans",sans-serif;
+    padding-bottom:15px;
+    font-family : "Philosopher",​sans-serif;
+    line-height:32px !important;
 
 }
 .intro_box {
