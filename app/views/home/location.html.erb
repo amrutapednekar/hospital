@@ -3,11 +3,11 @@
   <h2><span>Find Us</span></h2>
 </div>
   <div class="blog_text">
-  Ranganath Hospital is located at ------ which is situated in the heart of Kolhapur -
+  Rangnath Hospital is located at ------ which is situated in the heart of Kolhapur -
   easy to approach from all over Kolhapur. Hospital is near from central bus stop.
   You can give us call and our representative will be able to guide you if you face
   any difficulty in finding the Hospital.<br/><br/>
-  It is advised that before coming to Ranganath Hospital always give us a call 
+  It is advised that before coming to Rangnath Hospital always give us a call
   specially in case when you do not already have appointment booked for you or your loved ones -
   this will help in providing information about the availability of doctors to address your problem .
   </div>
@@ -15,27 +15,27 @@
   <div id="googlemap" class="googlemap"></div>
   <script type="text/javascript">
     function enlarge_map(){
-      var address = "Keviz Plaza,Near Usha Talkies, Station Rd, Kolhapur, Maharashtra 416002, India ‎";
+      var address = "204 KH /17 B Patankar colony,Tarabai Park,Near Hotel Pearl,, Kolhapur, Maharashtra 416003, India";
       window.open('http://maps.google.com.au/maps?q='+escape(address));
       return false;
     }
     var map;
     function loadmap() {
       var geocoder;
-      var address = "Keviz Plaza,Near Usha Talkies, Station Rd, Kolhapur, Maharashtra 416002, India ‎";
-      var address_description = "<strong>Company:</strong><br>Gayatri Swaroop Hospital, <br/>Kolhapur.";
+      var address = "204 KH /17 B Station Rd,Tarabai Park, Kolhapur, Maharashtra 416003, India ‎‎";
+      var address_description = "<strong>We are here:</strong><br>Rangnath Hospital, <br/>Kolhapur.";
       geocoder = new google.maps.Geocoder();
       geocoder.geocode( { 'address': address}, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
           var myOptions = {
             zoom: 16,
-            center: new google.maps.LatLng(16.70286,74.232964),
+            center: new google.maps.LatLng(16.707298,74.245759),
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           map = new google.maps.Map(document.getElementById("googlemap"), myOptions);
           var marker = new google.maps.Marker({
             map: map,
-            position: new google.maps.LatLng(16.70286,74.232964)
+            position: new google.maps.LatLng(16.707298,74.245759)
           });
           var infowindow = new google.maps.InfoWindow({
             content: address_description
@@ -60,8 +60,8 @@
     <div class="title_bar">Details</div>
     <div class="content">
       <p><strong>Address:</strong><br />
-        ' Kevis Plaza ' Nr. Usha Talkies,
-        Station Road, Kolhapur. </p>
+        204 KH /17 B Patankar colony,Station Road,
+        Tarabai Park, Kolhapur 416003</p>
       <p> <strong>P</strong>: 9325936607, 9325936608 <br />
         <strong>F</strong>: Fax number here <br />
         <strong>E</strong>: <a href="mailto:info@company.com">amruta.jadhav1@gmail.com</a></p>
