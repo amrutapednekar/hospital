@@ -31,4 +31,7 @@ class LaparoscopyController < ApplicationController
   def endometriosis
   
   end
+  def tubal_cannulation
+    
+  end
 end

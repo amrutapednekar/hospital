@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'laparoscopy/cholecystectomy'
   get 'laparoscopy/endometriosis'
   get 'laparoscopy/cardiomyotomy'
+  get 'laparoscopy/tubal_cannulation'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
