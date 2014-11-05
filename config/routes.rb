@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   post 'home/send_contact_email'
   get 'home/faculty'
   get 'home/awards'
-  get 'home/location'
+  get 'home/locate'
+  get 'home/faq'
 
   get 'laparoscopy/index'
   get 'laparoscopy/hysteroscopy'

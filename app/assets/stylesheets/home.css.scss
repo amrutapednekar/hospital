@@ -623,8 +623,60 @@ ul.gallery {
     margin-top:3px;
     display:block;
 }
-#week_count > img
-{padding-left:25px;}
 
 #facultyBody li
 {margin: 0 20px 20px 0;}
+
+#svPlayerId{bottom:auto;height:585px;}
+.lightplayer{
+overflow:hidden;
+posotion:relative;
+height:auto;
+}
+.stage{height: 583px;}
+.lightPlayer .slide.show
+{
+font:0;
+height:100%;
+min-height:50px;
+width:785px;
+margin-left:80px;
+box-shadow:0 0 35px green;
+}
+.lightPlayer .slide
+{
+overflow:hidden;
+text-align:center;
+width:100%;
+}
+.show{display:block;}
+.lightPlayer .slide_image
+{
+max-width:100%;
+vertical-align:middle;
+margin-top:30px;
+}
+.toolbar_wrapper
+{
+margin-left:80px;
+margin-top:13px;
+width:785px;
+box-shadow: 0 0 8px green;
+min-height:40px;
+}
+.nav{padding-top:5px;padding-left:217px;}
+.toolbar .btnFirst{background-position:-2px -6px;}
+.toolbar .btnPrevious{background-position:-6px -326px;margin-right:4px;}
+.toolbar .btnNext{background-position:-166px -486x;}
+.toolbar .btnLast{background-position:-168px -166px;}
+.toolbar button, .toolbar a
+{
+background-color:#8d8d77;
+float:left;
+height:28px;
+padding: 0;
+text-align:-9999em;
+margin-left:5px;
+margin-right:5px;
+}
+.display_none{display:nones;}

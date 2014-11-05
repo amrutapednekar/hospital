@@ -1,55 +1,84 @@
-<div id="week_by_week">
-  <div class="blog" style="min-height: 10px!important;">
-    <h2><span><a href="#">Your Baby.... Week By Week</a></span>
-    </h2>
-  </div>
-  <div id="week_count">
-    <button id="prev" style="float:left;">Go to Prev</button>
-    <%= image_tag("week3.jpg",:id =>'img1',  :style=>"display:inline-block;") -%>
-    <%= image_tag("week5.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week6.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week7.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week8.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week9.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week10.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week11.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week12.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week13.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week15.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week18.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week20.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week23.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week26.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week28.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week31.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week32.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week35.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week39.jpg",:style=>"display:none;") -%>
-    <%= image_tag("week40.jpg",:style=>"display:none;") -%>
-    <button id="next" style="float:right;">Go to Next</button>
+<div>
+  <h2><span>Your Baby.... Week By Week</span></h2>
+</div>
+<div class="blog_text">
+  <p>Get a sense of your baby's approximate length and weight from conception to birth with our week-by-week averages.
+  </p>
+</div><br/><br/>
+<div id="svPlayerId" class="lightPlayer">
+  <div class="stage" style="">
+    <div class="slide show">
+      <img id="img1" alt="3 weeks pregnancy" src="/assets/week3.jpg" class="slide_image"></img>
+      <img alt="5 weeks pregnancy" src="/assets/week5.jpg" class="slide_image display_none"></img>
+      <img alt="6 weeks pregnancy" src="/assets/week6.jpg" class="slide_image display_none"></img>
+      <img alt="7 weeks pregnancy" src="/assets/week7.jpg" class="slide_image display_none"></img>
+      <img alt="8 weeks pregnancy" src="/assets/week8.jpg" class="slide_image display_none"></img>
+      <img alt="9 weeks pregnancy" src="/assets/week9.jpg" class="slide_image display_none"></img>
+      <img alt="10 weeks pregnancy" src="/assets/week10.jpg" class="slide_image display_none"></img>
+      <img alt="11 weeks pregnancy" src="/assets/week11.jpg" class="slide_image display_none"></img>
+      <img alt="12 weeks pregnancy" src="/assets/week12.jpg" class="slide_image display_none"></img>
+      <img alt="13 weeks pregnancy" src="/assets/week13.jpg" class="slide_image display_none"></img>
+      <img alt="15 weeks pregnancy" src="/assets/week15.jpg" class="slide_image display_none"></img>
+      <img alt="18 weeks pregnancy" src="/assets/week18.jpg" class="slide_image display_none"></img>
+      <img alt="20 weeks pregnancy" src="/assets/week20.jpg" class="slide_image display_none"></img>
+      <img alt="23 weeks pregnancy" src="/assets/week23.jpg" class="slide_image display_none"></img>
+      <img alt="26 weeks pregnancy" src="/assets/week26.jpg" class="slide_image display_none"></img>
+      <img alt="28 weeks pregnancy" src="/assets/week28.jpg" class="slide_image display_none"></img>
+      <img alt="31 weeks pregnancy" src="/assets/week31.jpg" class="slide_image display_none"></img>
+      <img alt="32 weeks pregnancy" src="/assets/week32.jpg" class="slide_image display_none"></img>
+      <img alt="35 weeks pregnancy" src="/assets/week35.jpg" class="slide_image display_none"></img>
+      <img alt="39 weeks pregnancy" src="/assets/week39.jpg" class="slide_image display_none"></img>
+      <img id="img40" alt="40 weeks pregnancy" src="/assets/week40.jpg" class="slide_image display_none"></img>
+
+    </div>
   </div>
 </div>
+<div class="toolbar_wrapper">
+  <div class="toolbar normal">
+    <div class="nav">
+      <button id="first_slide" title="First Slide" class="btnFirst button_small" id="btnFirst">«</button>
+      <button id="prev_slide" title="Previous Slide" class="btnPrevious button_small" id="btnPrevious">‹</button>
+      <button id="next_slide" title="Next Slide" class="btnNext button_small" id="btnNext">›</button>
+      <button id="last_slide" title="Last Slide" class="btnLast button_small" id="btnLast">»</button>
+    </div>
+  </div>
+</div>
+
 <div class="clear"></div>
 
 <script type="text/javascript">
   var $curr = $( "#img1" );
-  $("#prev").hide();
+  var $prev_slide = $("#prev_slide");
+  var $next_slide = $( "#next_slide");
 
-  $( "#next" ).click(function() {
-    $("#prev").show();
+  $prev_slide.disabled = true;
+
+  $next_slide.click(function() {
+    $prev_slide.disabled = false;
     $curr.hide('slow');
     $curr = $curr.next();
     $curr.show('slow');
     if($curr.next().prop("tagName")!='IMG')
-     $("#next").hide();
+      $next_slide.disabled = true;
   });
 
-  $( "#prev" ).click(function() {
-    $("#next").show();
+  $prev_slide.click(function() {
+    $next_slide.disabled = false;
     $curr.hide('slow');
     $curr = $curr.prev();
     $curr.show('slow');
-   if($curr.prev().prop("tagName")!='IMG')
-     $("#prev").hide();
+    if($curr.prev().prop("tagName")!='IMG')
+      $prev_slide.disabled = true;
+  });
+  $("#first_slide").click(function() {
+    $curr.hide('slow');
+    $curr = $("#img1");
+    $curr.show('slow');
+  });
+
+  $("#last_slide").click(function() {
+    $curr.hide('slow');
+    $curr = $("#img40");
+    $curr.show('slow');
   });
 </script>

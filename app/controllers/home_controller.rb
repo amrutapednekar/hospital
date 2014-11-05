@@ -28,7 +28,6 @@ class HomeController < ApplicationController
 
   def awards
   end
-  def location
-    
+  def locate
   end
 end
