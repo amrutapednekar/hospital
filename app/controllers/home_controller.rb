@@ -20,9 +20,6 @@ class HomeController < ApplicationController
     end
   end
   
-  def week_by_week
-  end
-
   def faculty
   end
 

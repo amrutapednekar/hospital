@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/contact'
-  get 'home/week_by_week'
   post 'home/send_contact_email'
   get 'home/faculty'
   get 'home/awards'
@@ -20,6 +19,10 @@ Rails.application.routes.draw do
   get 'laparoscopy/endometriosis'
   get 'laparoscopy/cardiomyotomy'
   get 'laparoscopy/tubal_cannulation'
+
+  get 'pregnancy/week_by_week'
+  get 'pregnancy/prenatal'
+  get 'pregnancy/infertility'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
