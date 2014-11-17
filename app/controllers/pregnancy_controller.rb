@@ -13,4 +13,7 @@ class PregnancyController < ApplicationController
 
   def caesarean
   end
+
+  def exercise
+  end
 end
