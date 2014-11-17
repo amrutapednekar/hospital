@@ -16,4 +16,7 @@ class PregnancyController < ApplicationController
 
   def exercise
   end
+  
+  def newborn
+  end
 end
