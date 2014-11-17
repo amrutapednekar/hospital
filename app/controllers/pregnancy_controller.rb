@@ -10,4 +10,7 @@ class PregnancyController < ApplicationController
 
   def natural_birth
   end
+
+  def caesarean
+  end
 end

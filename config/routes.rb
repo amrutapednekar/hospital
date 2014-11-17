@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'pregnancy/prenatal'
   get 'pregnancy/infertility'
   get 'pregnancy/natural_birth'
+  get 'pregnancy/caesarean'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
