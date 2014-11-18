@@ -19,4 +19,11 @@ class PregnancyController < ApplicationController
   
   def newborn
   end
+
+  def postnatal
+  end
+
+  def contraception
+    
+  end
 end
