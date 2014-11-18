@@ -112,11 +112,13 @@ ul#navigation li.hover ul.second-menu ul.third-level, ul#navigation li:hover ul.
     display:none;
 }
 ul#navigation ul.second-menu {
+    box-shadow:0 0 35px green;
     position:absolute;
-    top:27px; /*how far away from the top menu*/
+    top:35px; /*how far away from the top menu*/
     left:0;
     margin:0;
     padding:5px;
+    padding-top:0px;
     width:200px;
     display:none;
     background-color:white;
